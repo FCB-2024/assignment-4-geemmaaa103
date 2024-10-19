@@ -4,6 +4,30 @@
 def main() :
 	## YOU CODE SHOULD START HERE AST THE SAME
 	## IDENTATION AS THIS COMMENT
+	x=int(input('Give me a number: '))
+	i=1
+	nd1=0
+	y=x - 1
+	nd2=0
+	while(i <= x):
+		if (x%i == 0):
+			nd1=nd1 + 1
+		i=i + 1
+	while(y >= 1):
+		i=1
+		while(i<=y):
+			if (y%i == 0):
+				nd2 = nd2 +1
+			i=i + 1
+		if (nd2 >= nd1):
+			print('not anti-prime')
+			y=0
+		else:
+			y=y - 1
+			nd2=0
+
+	if (nd2<nd1):
+		
 
 
 	## THE LAST LINES OF YOUR CODE SHOULD EITHER
@@ -11,7 +35,7 @@ def main() :
 	## REPLACE THE FOLLOWING LINE BY WHATEVER LINES
 	## OF CODE ALLOW THIS FUNCTION TO RETURN THE VALUE
 	## "anti-prime" or "not anti-prime"
-	return("anti-prime")
+		return("anti-prime")
 
 ## DO NOT REMOVE THIS LINE BELOW
 if __name__ == "__main__" :
